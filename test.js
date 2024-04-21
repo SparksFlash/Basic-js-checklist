@@ -4,7 +4,7 @@ function bestFriend(friends) {
     var longestLength = 0;
     var longestName = '';
     for (var friend of friends) {
-        if (longestLength < friend.length) { // Compare with friend.length, not longestLength.length
+        if (longestLength < friend.length) {
             longestLength = friend.length;
             longestName = friend;
         }
@@ -13,4 +13,4 @@ function bestFriend(friends) {
 }
 
 var big_spell = bestFriend(friends);
-console.log(big_spell); // Output: Goriber Darshan
+console.log(big_spell);
