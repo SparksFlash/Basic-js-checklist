@@ -24,18 +24,18 @@
 // book2 has 200 pages
 // book3 has 300 pages
 
-//function calculateTotalPages(bookPages) {
-//   let totalPages = 0;
-//   for (let pages of bookPages) {
-//       totalPages += pages;
-//   }
-//   return totalPages;
-// }
+function calculateTotalPages(bookPages) {
+  let totalPages = 0;
+  for (let pages of bookPages) {
+      totalPages += pages;
+  }
+  return totalPages;
+}
 
-// // Test the function
-// const bookPages = [100, 200, 300];
-// const total = calculateTotalPages(bookPages);
-// console.log("Total pages for all books:", total);
+// Test the function
+const bookPages = [100, 200, 300];
+const total = calculateTotalPages(bookPages);
+console.log("Total pages for all books:", total);
 
 //4. friends
 //bestFriend
@@ -61,25 +61,25 @@ console.log(big_spell);
 //5. will stop the loop if the array has any negative number and returns all the positive number before the negative number
 //onlyPositive
 
-// function onlyPositive(arr) {
-//   let result = [];
-//   for (var element of arr) {
-//       if (element < 0) {
-//           break;
-//       }
-//       if (element >= 0) {
-//           result.push(element);
-//       }
-//   }
-//   return result;
-// }
+function onlyPositive(arr) {
+  let result = [];
+  for (var element of arr) {
+      if (element < 0) {
+          break;
+      }
+      if (element >= 0) {
+          result.push(element);
+      }
+  }
+  return result;
+}
 
-// // Example usage:
-// const array1 = [1, 2, 3, 4, -5, 6, 7];
-// console.log(onlyPositive(array1)); // Output: [1, 2, 3, 4]
+// Example usage:
+const array1 = [1, 2, 3, 4, -5, 6, 7];
+console.log(onlyPositive(array1)); // Output: [1, 2, 3, 4]
 
-// const array2 = [3, 5, 7, 9];
-// console.log(onlyPositive(array2)); // Output: [3, 5, 7, 9]
+const array2 = [3, 5, 7, 9];
+console.log(onlyPositive(array2)); // Output: [3, 5, 7, 9]
 
-// const array3 = [-2, 6, 8, 10];
-// console.log(onlyPositive(array3)); // Output: []
+const array3 = [-2, 6, 8, 10];
+console.log(onlyPositive(array3)); // Output: []
